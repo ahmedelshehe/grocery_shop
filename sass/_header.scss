@@ -1,0 +1,85 @@
+.header{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 1000000;
+    padding: 0 3rem;
+    .logo__img{
+        display: block;
+        width: 6rem;
+        height:6rem;
+        transform: scale(2.5);
+        background-position: center;
+        margin-left: 3rem;
+    }
+}
+
+
+        .search{
+            display: flex;
+            margin: 0 auto;
+            &__input{
+                border: none;
+                width: 40vw;
+                border-radius: 2rem;  
+                background-color: rgb(238, 222, 222);
+                padding: 1rem;  
+                padding-left: 3rem;
+
+            }
+            &__button{
+                border: none;
+                background: transparent;
+                margin-left: -2rem;
+                cursor: pointer;
+                &:active,&:focus{
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+                }
+            }
+        }
+.nav
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        ul{
+            display: flex;
+            list-style: none;
+            width: 100%;
+            padding-right: 1.5rem;
+            list-style-type: none;
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+                cursor: pointer;
+                letter-spacing: .1em;
+
+                &:hover{
+                    background-color: rgb(238, 222, 222);
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 900;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    
+                    a:visited,a:link{
+                        background-color: gray;
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+    }

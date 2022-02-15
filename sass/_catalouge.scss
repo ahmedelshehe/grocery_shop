@@ -1,0 +1,31 @@
+.catalouge{
+    height: 100vh;
+    width: auto;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    
+    h1{
+        text-align: center;
+        margin-top: 3rem;
+        font-weight: 900;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        line-height: 1.2rem;
+        margin-bottom: 3rem;
+        transition: all .3s;
+        &:hover{
+            font-size: 3.2rem;
+            transform: translateY(-2px);
+        }
+    }
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 3rem;
+        margin: 0 1.5rem;
+    }
+
+}
